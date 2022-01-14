@@ -82,6 +82,8 @@ h2 {
   border-left-color: #900;
 }
 
+/* Responsividade */
+
 @media (max-width: 600px) {
   .vantagens {
     place-self: center;
@@ -106,5 +108,10 @@ h2 {
   .texto a {
     margin: 10px 0px 0px;
     place-self: end center;
+  }
+
+  .item {
+    border-left-color: #900;
+    margin-bottom: 10px;
   }
 }
