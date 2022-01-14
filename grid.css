@@ -1,0 +1,110 @@
+/* TEXTO */
+
+.texto {
+  padding: 3.3rem;
+  display: grid;
+  place-items: end;
+  position: relative;
+}
+
+.texto::before {
+  content: "";
+  width: 3.5rem;
+  height: 5px;
+  border-radius: 4px;
+  background-color: #900;
+  position: absolute;
+  top: 25px;
+  right: -35px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+.texto h2 {
+  font-size: 2rem;
+}
+
+.texto p {
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+.texto a {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+  padding: 15px 20px;
+  background: #ee2211;
+  color: #f7f7f7;
+}
+
+.texto a:hover {
+  background: #900;
+  color: #fff;
+}
+
+/* vantagens */
+
+.vantagens {
+  background-image: url(img/onda.svg);
+  color: #c6c6c6;
+  padding: 1rem;
+  font-size: 3rem;
+  align-self: center;
+  text-align: end;
+}
+
+/* infos */
+.info {
+  margin: 0px;
+  padding: 40px;
+}
+
+.info h3 {
+  display: flex;
+  place-self: flex-start;
+  gap: 10px;
+}
+
+.info .item:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.item {
+  padding: 2px 0.8rem;
+  border-left: 4px solid transparent;
+  transition: 0.2s;
+}
+
+.item:hover {
+  border-left-color: #900;
+}
+
+@media (max-width: 600px) {
+  .vantagens {
+    place-self: center;
+    text-align: center;
+    font-size: 150%;
+  }
+
+  .texto::before {
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 0px;
+  }
+
+  .texto p {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .texto a {
+    margin: 10px 0px 0px;
+    place-self: end center;
+  }
+}
